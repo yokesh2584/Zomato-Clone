@@ -38,7 +38,7 @@ class Details extends React.Component {
                 console.error(err);
             })
 
-        axios.get(`https://zomato-server-backend.vercel.app/${restaurant}`)
+        axios.get(`https://zomato-server-backend.vercel.app/menuItems/${restaurant}`)
             .then(response => {
               if (response.data) {
                 const menuItem = response.data[0];
