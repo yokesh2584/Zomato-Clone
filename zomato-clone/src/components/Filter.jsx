@@ -61,7 +61,7 @@ class Filter extends React.Component {
 
         axios({
             method: 'POST',
-            url: 'http://localhost:8700/filter',
+            url: 'https://zomato-server-backend.vercel.app/filter',
             headers: { 'Content-Type': 'application/json' },
             data: filterObj
         })
@@ -87,7 +87,7 @@ class Filter extends React.Component {
 
         axios({
             method: 'POST',
-            url: 'http://localhost:8700/filter',
+            url: 'https://zomato-server-backend.vercel.app/filter',
             headers: { 'Content-Type': 'application/json' },
             data: filterObj
         })
@@ -124,7 +124,7 @@ class Filter extends React.Component {
     
         axios({
             method: 'POST',
-            url: 'http://localhost:8700/filter',
+            url: 'https://zomato-server-backend.vercel.app/filter',
             headers: { 'Content-Type': 'application/json' },
             data: filterObj
         })
@@ -161,7 +161,7 @@ class Filter extends React.Component {
 
         axios({
             method: 'POST',
-            url: 'http://localhost:8700/filter',
+            url: 'https://zomato-server-backend.vercel.app/filter',
             headers: { 'Content-Type': 'application/json' },
             data: filterObj
         })
@@ -196,7 +196,7 @@ class Filter extends React.Component {
 
         axios({
             method: 'POST',
-            url: 'http://localhost:8700/filter',
+            url: 'https://zomato-server-backend.vercel.app/filter',
             headers: { 'Content-Type': 'application/json' },
             data: filterObj
         })
@@ -234,7 +234,7 @@ class Filter extends React.Component {
 
         axios({
             method: "POST",
-            url: "http://localhost:8700/filter",
+            url: "https://zomato-server-backend.vercel.app/filter",
             headers: { "Content-Type": "application/json" },
             data: filterObj
         })

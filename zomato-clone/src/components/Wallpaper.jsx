@@ -22,7 +22,7 @@ class  Wallpaper extends React.Component {
 
         sessionStorage.setItem('locationId', locationId);
 
-        axios.get(`http://localhost:8700/restaurants/${city}`)
+        axios.get(`https://zomato-server-backend.vercel.app/restaurants/${city}`)
             .then(response => {
                 this.setState({restaurants: response.data})
             })

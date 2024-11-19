@@ -19,7 +19,7 @@ class Home extends React.Component {
     componentDidMount(){
         sessionStorage.clear();
 
-        axios.get('http://localhost:8700/locations')
+        axios.get('https://zomato-server-backend.vercel.app/locations')
             .then(response => {
                 this.setState({locations: response.data})
             })
@@ -27,7 +27,7 @@ class Home extends React.Component {
                 console.error(err);
             })
         
-        axios.get('http://localhost:8700/mealType')
+        axios.get('https://zomato-server-backend.vercel.app/mealType')
         .then(response => {
             this.setState({mealType: response.data})
         })

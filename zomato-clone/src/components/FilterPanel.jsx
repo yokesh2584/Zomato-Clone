@@ -13,7 +13,7 @@ class FilterPanel extends React.Component {
     }
     
     componentDidMount(){
-        axios.get('http://localhost:8700/locations')
+        axios.get('https://zomato-server-backend.vercel.app/locations')
             .then(response => {
                 this.setState({ locations: response.data })
             })

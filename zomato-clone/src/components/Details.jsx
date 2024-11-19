@@ -25,7 +25,7 @@ class Details extends React.Component {
         const qs = queryString.parse(window.location.search);
         const { restaurant } = qs ;
 
-        axios.get(`http://localhost:8700/restaurants`)
+        axios.get(`https://zomato-server-backend.vercel.app/restaurants`)
             .then(response => {
                 const restaurantData = response.data.find((item) => item.location_id === parseInt(restaurant));
                 if ( restaurantData ) {
@@ -38,7 +38,7 @@ class Details extends React.Component {
                 console.error(err);
             })
 
-        axios.get(`http://localhost:8700/menuItems/${restaurant}`)
+        axios.get(`https://zomato-server-backend.vercel.app/${restaurant}`)
             .then(response => {
               if (response.data) {
                 const menuItem = response.data[0];
