@@ -12,11 +12,10 @@
         "dest": "project/index.js"
       }
     ],
-    "functions": [{
+    "functions": {
     "api/**/*.js": {
       "timeout": 30
     }
     }
-    ]
   }
   
