@@ -34,6 +34,11 @@ app.use('/', locationsRoute);
 app.use('/', mealTypeRoute);
 app.use('/', menuItemsRoute);
 app.use('/', paymentRoute);
+
+app.use((req, res, next) => {
+    res.status(404).send('Route Not Found');
+  });
+
 app.all('*', (req, res) => {
     res.send('Zomato Backend Server');
   });
@@ -42,3 +47,5 @@ const port = 8700;
 app.listen(port, ()=>{
     console.log(`Server is now listening to port ${port}`);
 });
+
+module.exports = app;
