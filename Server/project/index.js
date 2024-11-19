@@ -1,4 +1,5 @@
 const express = require('express');
+const app = express();
 const dotenv = require('dotenv');
 const mongoose = require('mongoose');
 const cors = require('cors');
@@ -36,7 +37,6 @@ const menuItemsRoute = require('../routes/menuItemsRoute');
 const paymentRoute = require('../routes/paymentRoute');
 
 
-const app = express();
 
 app.use(cors());
 app.use(express.json());
