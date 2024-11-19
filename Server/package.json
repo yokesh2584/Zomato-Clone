@@ -2,14 +2,14 @@
   "name": "zomato",
   "version": "1.0.0",
   "description": "This is a zomato-clone application",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node project/server.js",
-    "vercel-build": "node project/server.js",
-    "vercel-start": "node project/server.js",
+    "start": "node project/index.js",
+    "vercel-build": "node project/index.js",
+    "vercel-start": "node project/index.js",
     "deploy": "vercel",
-    "dev": "nodemon project/server.js"
+    "dev": "nodemon project/index.js"
   },
   "keywords": [
     "Zomato",

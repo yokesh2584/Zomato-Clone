@@ -1,9 +1,15 @@
 {
     "version": 2,
+    "builds": [
+      {
+        "src": "project/index.js",
+        "use": "@vercel/static-build"
+      }
+    ],
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "project/server.js"
+        "dest": "project/index.js"
       }
     ]
   }
