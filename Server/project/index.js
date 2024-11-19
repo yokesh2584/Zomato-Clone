@@ -43,6 +43,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 
+app.all('/', (req, res) => {
+    res.send('Welcome to the Zomato Backend API');
+  });
+
 app.use('/', restaurantRoute);
 app.use('/', locationsRoute);
 app.use('/', mealTypeRoute);
@@ -53,9 +57,6 @@ app.use((req, res, next) => {
     res.status(404).send('Route Not Found');
   });
 
-// app.all('*', (req, res) => {
-//     res.send('Zomato Backend Server');
-//   });
 
 // const port = 8700;
 // app.listen(port, ()=>{
