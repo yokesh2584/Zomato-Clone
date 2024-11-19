@@ -7,13 +7,26 @@ dotenv.config();
 
 const MongoDB_URI = process.env.MONGODB_URI;
 
-mongoose.connect(MongoDB_URI)
-.then(() => {
-    console.log('MongoDB connected');
-})
-.catch((err) => {
-    console.error('MongoDB connection error:', err.message);
+let isMongoConnected = false;
+
+async function connectMongo() {
+  if (!isMongoConnected) {
+    try {
+      await mongoose.connect(MongoDB_URI, { useNewUrlParser: true, useUnifiedTopology: true });
+      console.log("MongoDB connected");
+      isMongoConnected = true;
+    } catch (err) {
+      console.error("MongoDB connection error:", err.message);
+    }
+  }
+}
+
+// Middleware to ensure MongoDB connection
+app.use(async (req, res, next) => {
+  await connectMongo();
+  next();
 });
+
 
 
 const restaurantRoute = require('../routes/restaurantsRoute');

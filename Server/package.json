@@ -1,32 +1,32 @@
 {
-  "name": "zomato",
+  "name": "zomato-backend",
   "version": "1.0.0",
-  "description": "This is a zomato-clone application",
+  "description": "This is a zomato-clone backend application",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node project/index.js",
-    "vercel-build": "node project/index.js",
-    "vercel-start": "node project/index.js",
-    "deploy": "vercel",
-    "dev": "nodemon project/index.js"
+    "deploy": "vercel"
   },
   "keywords": [
     "Zomato",
-    "Clone"
+    "Clone",
+    "Backend",
+    "API"
   ],
   "author": "Yokesh",
   "license": "ISC",
   "dependencies": {
     "axios": "^1.7.7",
-    "body-parser": "^1.20.3",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.21.1",
-    "mongodb": "^6.10.0",
     "mongoose": "^8.8.1"
   },
-  "devDependencies": {
-    "nodemon": "^3.1.7"
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yokesh2584/Zomato-Clone.git"
   }
 }
