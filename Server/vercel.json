@@ -11,10 +11,7 @@
       "src": "/(.*)",
       "dest": "project/index.js"
     }
-  ],
-  "env": {
-    "NODE_VERSION": "16.14.2"
-  }
+  ]
 }
 
   
