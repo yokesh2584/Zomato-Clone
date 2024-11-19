@@ -1,0 +1,282 @@
+[
+  {
+    "name": "Domino's",
+    "city": "Delhi",
+    "location_id": 1,
+    "locality": "Shalimar Bagh",
+    "cuisine": [
+      { "id": 4, "name1": "Fast Food" },
+      { "id": 1, "name2": "North Indian" }
+    ],
+    "image": "Assets/pizza.jpg",
+    "mealtype_id": 2,
+    "min_price": 800,
+    "aggregate_rating": 4.2
+  },
+  {
+    "name": "KFC",
+    "city": "Delhi",
+    "location_id": 2,
+    "locality": "Rohini",
+    "cuisine": [
+      { "id": 4, "name1": "Fast Food" },
+      { "id": 2, "name2": "South Indian" }
+    ],
+    "image": "Assets/breakfast.jpg",
+    "mealtype_id": 1,
+    "min_price": 500,
+    "aggregate_rating": 4.5
+  },
+  {
+    "name": "Burger King",
+    "city": "Delhi",
+    "location_id": 3,
+    "locality": "Dwarka",
+    "cuisine": [
+      { "id": 4, "name1": "Fast Food" },
+      { "id": 2, "name2": "South Indian" }
+    ],
+    "image": "Assets/breakfast.jpg",
+    "mealtype_id": 3,
+    "min_price": 1200,
+    "aggregate_rating": 4.5
+  },
+  {
+    "name": "KFC",
+    "city": "Chennai",
+    "location_id": 4,
+    "locality": "Tambaram",
+    "cuisine": [
+      { "id": 4, "name1": "Fast Food" },
+      { "id": 2, "name2": "South Indian" }
+    ],
+    "image": "Assets/breakfast.jpg",
+    "mealtype_id": 6,
+    "min_price": 900,
+    "aggregate_rating": 4.4
+  },
+  {
+    "name": "Baba Ka Dhaba",
+    "city": "Delhi",
+    "location_id": 5,
+    "locality": "Anand Vihar",
+    "cuisine": [
+      { "id": 1, "name1": "North Indian" },
+      { "id": 8, "name2": "Vegetarian" }
+    ],
+    "image": "Assets/breakfast.jpg",
+    "mealtype_id": 2,
+    "min_price": 600,
+    "aggregate_rating": 3.5
+  },
+  {
+    "name": "Burger King",
+    "city": "Chennai",
+    "location_id": 6,
+    "locality": "Velachery",
+    "cuisine": [
+      { "id": 4, "name1": "Fast Food" },
+      { "id": 1, "name2": "North Indian" }
+    ],
+    "image": "Assets/breakfast.jpg",
+    "mealtype_id": 5,
+    "min_price": 1500,
+    "aggregate_rating": 4.8
+  },
+  {
+    "name": "Pizza Hut",
+    "city": "Mumbai",
+    "location_id": 7,
+    "locality": "Andheri",
+    "cuisine": [
+      { "id": 5, "name1": "Chinese" },
+      { "id": 4, "name2": "Fast Food" }
+    ],
+    "image": "Assets/pizza.jpg",
+    "mealtype_id": 1,
+    "min_price": 1000,
+    "aggregate_rating": 4.1
+  },
+  {
+    "name": "Taco Bell",
+    "city": "Bangalore",
+    "location_id": 8,
+    "locality": "Indiranagar",
+    "cuisine": [
+      { "id": 4, "name1": "Fast Food" },
+      { "id": 6, "name2": "Asian" }
+    ],
+    "image": "Assets/taco.jpg",
+    "mealtype_id": 3,
+    "min_price": 700,
+    "aggregate_rating": 4.2
+  },
+  {
+    "name": "Subway",
+    "city": "Hyderabad",
+    "location_id": 9,
+    "locality": "Banjara Hills",
+    "cuisine": [
+      { "id": 4, "name1": "Fast Food" },
+      { "id": 7, "name2": "Cafe" }
+    ],
+    "image": "Assets/subway.jpg",
+    "mealtype_id": 2,
+    "min_price": 400,
+    "aggregate_rating": 4.0
+  },
+  {
+    "name": "McDonald's",
+    "city": "Delhi",
+    "location_id": 10,
+    "locality": "Connaught Place",
+    "cuisine": [
+      { "id": 4, "name1": "Fast Food" },
+      { "id": 1, "name2": "North Indian" }
+    ],
+    "image": "Assets/mcd.jpg",
+    "mealtype_id": 1,
+    "min_price": 600,
+    "aggregate_rating": 4.3
+  },
+  {
+    "name": "Cafe Coffee Day",
+    "city": "Chennai",
+    "location_id": 11,
+    "locality": "T. Nagar",
+    "cuisine": [
+      { "id": 7, "name1": "Cafe" },
+      { "id": 10, "name2": "Desserts" }
+    ],
+    "image": "Assets/ccd.jpg",
+    "mealtype_id": 5,
+    "min_price": 200,
+    "aggregate_rating": 3.8
+  },
+  {
+    "name": "Barbeque Nation",
+    "city": "Mumbai",
+    "location_id": 12,
+    "locality": "Bandra",
+    "cuisine": [
+      { "id": 9, "name1": "BBQ" },
+      { "id": 1, "name2": "North Indian" }
+    ],
+    "image": "Assets/barbeque.jpg",
+    "mealtype_id": 3,
+    "min_price": 1200,
+    "aggregate_rating": 4.5
+  },
+  {
+    "name": "Sagar Ratna",
+    "city": "Delhi",
+    "location_id": 13,
+    "locality": "Lajpat Nagar",
+    "cuisine": [
+      { "id": 2, "name1": "South Indian" },
+      { "id": 8, "name2": "Vegetarian" }
+    ],
+    "image": "Assets/sagar.jpg",
+    "mealtype_id": 2,
+    "min_price": 500,
+    "aggregate_rating": 4.1
+  },
+  {
+    "name": "Mainland China",
+    "city": "Bangalore",
+    "location_id": 14,
+    "locality": "Koramangala",
+    "cuisine": [
+      { "id": 5, "name1": "Chinese" },
+      { "id": 6, "name2": "Asian" }
+    ],
+    "image": "Assets/mainland.jpg",
+    "mealtype_id": 6,
+    "min_price": 1000,
+    "aggregate_rating": 4.4
+  },
+  {
+    "name": "Dindigul Thalappakatti",
+    "city": "Chennai",
+    "location_id": 15,
+    "locality": "Anna Nagar",
+    "cuisine": [
+      { "id": 3, "name1": "Hyderabadi" },
+      { "id": 2, "name2": "South Indian" }
+    ],
+    "image": "Assets/thalappakatti.jpg",
+    "mealtype_id": 5,
+    "min_price": 400,
+    "aggregate_rating": 4.2
+  },
+  {
+    "name": "The Great Indian Thali",
+    "city": "Hyderabad",
+    "location_id": 16,
+    "locality": "Jubilee Hills",
+    "cuisine": [
+      { "id": 1, "name1": "North Indian" },
+      { "id": 2, "name2": "South Indian" }
+    ],
+    "image": "Assets/thali.jpg",
+    "mealtype_id": 2,
+    "min_price": 800,
+    "aggregate_rating": 4.3
+  },
+  {
+    "name": "Mumbai Darbar",
+    "city": "Mumbai",
+    "location_id": 17,
+    "locality": "Colaba",
+    "cuisine": [
+      { "id": 1, "name1": "North Indian" },
+      { "id": 5, "name2": "Chinese" }
+    ],
+    "image": "Assets/darbar.jpg",
+    "mealtype_id": 3,
+    "min_price": 1000,
+    "aggregate_rating": 4.2
+  },
+  {
+    "name": "Taj Hotel",
+    "city": "Bangalore",
+    "location_id": 18,
+    "locality": "MG Road",
+    "cuisine": [
+      { "id": 1, "name1": "North Indian" },
+      { "id": 6, "name2": "Asian" }
+    ],
+    "image": "Assets/taj.jpg",
+    "mealtype_id": 5,
+    "min_price": 1500,
+    "aggregate_rating": 4.5
+  },
+  {
+    "name": "Savaji",
+    "city": "Chennai",
+    "location_id": 19,
+    "locality": "Egmore",
+    "cuisine": [
+      { "id": 2, "name1": "South Indian" },
+      { "id": 8, "name2": "Vegetarian" }
+    ],
+    "image": "Assets/savaji.jpg",
+    "mealtype_id": 2,
+    "min_price": 600,
+    "aggregate_rating": 4.1
+  },
+  {
+    "name": "Kabab Corner",
+    "city": "Delhi",
+    "location_id": 20,
+    "locality": "Karol Bagh",
+    "cuisine": [
+      { "id": 1, "name1": "North Indian" },
+      { "id": 9, "name2": "BBQ" }
+    ],
+    "image": "Assets/kabab.jpg",
+    "mealtype_id": 3,
+    "min_price": 900,
+    "aggregate_rating": 4.0
+  }
+]

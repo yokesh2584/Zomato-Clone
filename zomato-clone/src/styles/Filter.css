@@ -1,0 +1,258 @@
+
+.heading {
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: bold;
+    font-stretch: normal;
+    line-height: 1.53;
+    letter-spacing: normal;
+    text-align: left;
+    color:hwb(221 10% 62%);
+    margin: 20px 0;
+}
+
+
+.filterPanel {
+    height: fit-content;
+    box-shadow: 0 3px 6px 0 rgba(0,0, 0, 0.16);
+    background-color: hsl(0, 0%, 100%);
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+
+.resultsPanel {
+    height: 290px;
+    box-shadow: 0 3px 6px 0 rgba(0,0, 0, 0.16);
+    background-color: hsl(0, 0%, 100%);
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.no-resultsPanel {
+    height: 150px;
+    color: hsl(0, 100%, 50%);
+    font-size: 2rem;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    letter-spacing: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 3px 6px 0 rgba(0,0, 0, 0.16);
+    background-color: hsl(0, 0%, 100%);
+    margin-bottom: 30px;
+}
+
+.filterHeading {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    margin: 5px 0;
+    letter-spacing: normal;
+    text-align: left;
+    color: hsl(221, 59%, 24%);
+}
+
+
+.filterPanelSubHeading {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: hsl(221, 59%, 24%);
+    margin: 15px 0;
+}
+
+
+.locationSelection {
+    height: fit-content;
+    width: 90%;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: solid 3px hsl(221, 59%, 24%);
+    cursor: pointer;
+}
+
+
+
+.cuisinOption {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: hsl(0, 0%, 0%);
+    margin: 1px;
+}
+
+
+.costOption{
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: hsl(0, 0%, 0%);
+    margin: 1px;
+}
+
+.sortOption{
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: hsl(0, 0%, 0%);
+    margin: 1px;
+}
+
+.upperSection{
+    padding: 20px;
+    padding-bottom: 0;
+}
+
+
+.lowerSection{
+    padding: 20px;
+    padding-bottom: 0;
+}
+
+
+.resultsImage{
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
+}
+
+
+.resultsHeading{
+    font-size: 30px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.53;
+    letter-spacing: normal;
+    text-align: left;
+    color: hsl(221, 59%, 24%);
+}
+
+
+.resultsSubHeading{
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.88;
+    letter-spacing: normal;
+    text-align: left;
+    color: hsl(221, 59%, 24%);
+}
+
+
+.resultsAddress{
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.88;
+    letter-spacing: normal;
+    text-align: left;
+    color: hsl(210, 1%, 65%);
+}
+
+
+.pagination {
+    display: flex;
+    padding-left: 30%;
+}
+
+
+.paginationButton {
+    background-color: hsl(0, 100%, 60%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    height: 45px;
+    width: 45px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 10px 15px 10px;
+    text-align: center;
+    border-radius: 5px;
+    padding-top: 2px;
+    cursor: pointer;
+    outline: none;  
+
+    &:active {
+        outline: none;
+    }
+}
+
+.paginationButton.active {
+    background-color: hsl(0, 100%, 40%);
+    color: white;
+     
+    &:focus {
+        outline: none;
+    }
+}
+
+
+@media screen and (max-width: 1220px) {
+    
+    .resultsHeading, .resultsSubHeading, .resultsAddress{
+        margin-left: 50px;
+    }
+    
+    .lowerSection{
+        padding-top: 0;
+    }
+    
+    .lowerSection .resultsAddress{
+        margin-left: 0;
+        width: 100px;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+
+    .resultsHeading, .resultsSubHeading, .resultsAddress{
+        margin-left: 80px;
+    }
+
+    .pagination {
+        padding-left: 15%;
+    }
+}
+
+
+@media screen and (width < 576px) {
+    
+    .pagination{
+        padding-left: 24%;
+    }
+
+}

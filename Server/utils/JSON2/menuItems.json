@@ -1,0 +1,158 @@
+[
+  {
+    "name": "Domino's",
+    "city": "Delhi",
+    "locality": "Shalimar Bagh",
+    "location_id": 1,
+    "menu": [
+      {
+        "name": "Margherita",
+        "price": 299,
+        "image": "assets/pizza.jpg",
+        "description": "Made with paneer and some quick spicy content like chilly and flakes."
+      },
+      {
+        "name": "Cheese Pizza",
+        "price": 199,
+        "image": "assets/pizza.jpg",
+        "description": "Made with paneer and some quick spicy content like chilly and flakes."
+      },
+      {
+        "name": "Evergreen Chicken Pizza",
+        "price": 265,
+        "image": "assets/pizza.jpg",
+        "description": "Made with paneer and some quick spicy content like chilly and flakes."
+      }
+    ]
+  },
+  {
+    "name": "KFC",
+    "city": "Delhi",
+    "locality": "Janpat",
+    "location_id": 2,
+    "menu": [
+      {
+        "name": "Spicy Chicken Wings",
+        "price": 150,
+        "image": "assets/dinner.jpg",
+        "description": "Crispy and spicy wings with a unique KFC flavor."
+      },
+      {
+        "name": "Zinger Burger",
+        "price": 220,
+        "image": "assets/dinner.jpg",
+        "description": "Delicious burger with crispy chicken and fresh lettuce."
+      },
+      {
+        "name": "Crispy Fries",
+        "price": 90,
+        "image": "assets/dinner.jpg",
+        "description": "Golden and crispy fries perfect for any meal."
+      }
+    ]
+  },
+  {
+    "name": "BurgerKing",
+    "city": "Delhi",
+    "locality": "MSP",
+    "location_id": 3,
+    "menu": [
+      {
+        "name": "Whopper",
+        "price": 250,
+        "image": "assets/snacks.jpg",
+        "description": "Signature Burger King whopper with flame-grilled beef patty."
+      },
+      {
+        "name": "Cheesy Fries",
+        "price": 100,
+        "image": "assets/snacks.jpg",
+        "description": "Fries topped with melted cheese and seasoning."
+      },
+      {
+        "name": "Chicken Royale",
+        "price": 180,
+        "image": "assets/snacks.jpg",
+        "description": "Crispy chicken fillet in a long sesame seed bun with mayo."
+      }
+    ]
+  },
+  {
+    "name": "KFC",
+    "city": "Chennai",
+    "locality": "Tambaram",
+    "location_id": 4,
+    "menu": [
+      {
+        "name": "Popcorn Chicken",
+        "price": 160,
+        "image": "assets/dinner.jpg",
+        "description": "Bite-sized, crispy chicken pieces perfect for a snack."
+      },
+      {
+        "name": "Bucket Meal",
+        "price": 500,
+        "image": "assets/dinner.jpg",
+        "description": "A bucket filled with a variety of fried chicken pieces."
+      },
+      {
+        "name": "Chicken Wrap",
+        "price": 150,
+        "image": "assets/dinner.jpg",
+        "description": "Tortilla wrap with crispy chicken, veggies, and a special sauce."
+      }
+    ]
+  },
+  {
+    "name": "Baba Ka Dhaba",
+    "city": "Delhi",
+    "locality": "Anand Vihar",
+    "location_id": 5,
+    "menu": [
+      {
+        "name": "Paneer Tikka",
+        "price": 120,
+        "image": "assets/lunch.jpg",
+        "description": "Grilled paneer with spices and a smoky flavor."
+      },
+      {
+        "name": "Aloo Paratha",
+        "price": 80,
+        "image": "assets/lunch.jpg",
+        "description": "Stuffed flatbread with spiced potato filling, served with curd."
+      },
+      {
+        "name": "Masala Chai",
+        "price": 20,
+        "image": "assets/lunch.jpg",
+        "description": "Traditional Indian tea brewed with spices."
+      }
+    ]
+  },
+  {
+    "name": "Burger King",
+    "city": "Chennai",
+    "locality": "Central Park",
+    "location_id": 6,
+    "menu": [
+      {
+        "name": "Veg Whopper",
+        "price": 230,
+        "image": "assets/lunch.jpg",
+        "description": "A vegetarian version of the classic whopper."
+      },
+      {
+        "name": "Onion Rings",
+        "price": 70,
+        "image": "assets/lunch.jpg",
+        "description": "Crispy, deep-fried onion rings with a golden crust."
+      },
+      {
+        "name": "Chocolate Sundae",
+        "price": 90,
+        "image": "assets/lunch.jpg",
+        "description": "Rich and creamy chocolate ice cream sundae."
+      }
+    ]
+  }
+]

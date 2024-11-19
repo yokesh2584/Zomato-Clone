@@ -1,0 +1,44 @@
+[
+    {
+    "name": "ShalimarBagh", 
+    "city_id":1,
+    "location_id": 1,
+    "city": "Delhi",
+    "country_name":"India"
+    },
+    {
+    "name":"Janpat",
+    "city_id": 1,
+    "location_id": 2, 
+    "city":"Delhi",
+    "country_name":"India"
+    },
+    {
+    "name":"MSP", 
+    "city_id": 1,
+    "location_id": 3, 
+    "city":"Delhi",
+    "country_name":"India"
+    },
+    {
+    "name":"Tambaram",
+    "city_id": 1,
+    "location_id":4,
+    "city":"Chennai",
+    "country_name": "India"
+    },
+    {
+    "name": "AnandVihar",
+    "city_id": 1,
+    "location_id": 5,
+    "city": "Delhi",
+    "country_name": "India" 
+    },
+    {
+    "name": "Central Park",
+    "city_id": 3,
+    "location_id": 6,
+    "city": "Chennai",
+    "country_name": "India" 
+    }
+] 
