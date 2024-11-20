@@ -1,5 +1,5 @@
 import React from 'react';
-import FacebookLogin from 'react-facebook-login';
+import FacebookLogin from 'react-facebook-login-lite';
 
 const FacebookLoginButton = ({ onSuccess }) => {
     const handleResponse = (response) => {
