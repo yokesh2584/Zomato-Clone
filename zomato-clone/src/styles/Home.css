@@ -222,6 +222,11 @@
         width: 50px;
         height: 60px;
     }
+
+    .search-box input{
+        padding: 15px 8px;
+        font-size: 1rem;
+    }
 }
 
 @media (width>=768px) {
