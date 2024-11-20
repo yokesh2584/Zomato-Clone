@@ -21,7 +21,7 @@ const QuickSearches = ({ QuickSearchDataItem }) => {
             onClick={() => handleClick(meal_type)}
         >
             <div className="qs-box-contents">
-                <img src={`../../public/${image}`} alt="breakfast" className="qs-image" />
+                <img src={`/${image}`} alt="breakfast" className="qs-image" />
                 <h4 className="qs-item-heading">{name}</h4>
                 <p className="qs-item-description">{content}</p>
             </div>

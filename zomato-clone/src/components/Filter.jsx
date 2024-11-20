@@ -301,7 +301,7 @@ class Filter extends React.Component {
                                 restaurants.map((restaurant) => {
                                     return <FilterResultsPanel 
                                     key={restaurant.location_id}
-                                    image={`../public/${restaurant.image}`}
+                                    image={`/${restaurant.image}`}
                                     heading={restaurant.name} 
                                     subheading={restaurant.locality}
                                     address={restaurant.city}

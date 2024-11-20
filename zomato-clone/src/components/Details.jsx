@@ -154,7 +154,7 @@ class Details extends React.Component {
                                     </div>
                                     <div className="col-12 col-sm-5 col-md-4 col-lg-4 px-1">
                                         <img
-                                        src={`../../public/${item.image}`}
+                                        src={`/${item.image}`}
                                         alt="Menu Item"
                                         className="menu-item-img mb-2"
                                         />

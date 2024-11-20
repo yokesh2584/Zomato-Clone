@@ -12,7 +12,7 @@ const FilterResultsPanel = ({ image, heading, subheading, address, cuisine, cost
     <div className="resultsPanel" onClick={handleRestaurantClick}>
       <div className="row upperSection">
         <div className="col-2">
-          <img src={image} alt="BreakFast" className="resultsImage" />
+          <img src={`/${image}`} alt="BreakFast" className="resultsImage" />
         </div>
         <div className="col-10">
           <div className="resultsHeading">{heading}</div>
