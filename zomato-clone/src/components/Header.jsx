@@ -211,7 +211,7 @@ class Header extends React.Component {
                         <div className="logins">
                             <FacebookLoginButton
                                 onSuccess={this.handleFacebookLoginSuccess}
-                                onError={() => console.log("Facebook login failed")}
+                                onError={(error) => console.error(error)}
                             />
                             <GoogleLoginButton
                                 onSuccess={this.handleLoginSuccess}

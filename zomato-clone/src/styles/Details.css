@@ -201,7 +201,7 @@
   color: hsl(0, 0%, 0%);
 }
 
-.pay-btn {
+/* .pay-btn {
   border: none;
   border-radius: 4px;
   font-size: 1.2rem;
@@ -213,7 +213,7 @@
   &:focus {
     outline: none;
   }
-}
+} */
 
 .menu-item-img {
   width: 60px;

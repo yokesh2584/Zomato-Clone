@@ -2,6 +2,7 @@ import React from "react";
 import queryString from "query-string";
 import axios from "axios";
 import Modal from "react-modal";
+import GooglePayButton from "@google-pay/button-react";
 
 import "../styles/Details.css";
 import Header from "./Header";
@@ -138,7 +139,45 @@ class Details extends React.Component {
                             <div className="col-12 text-left total-amount">Price: {subTotalAmount}</div>
                         </div>
                         <div className="row">
-                            <div className="col-12"><button className="pay-btn">Pay Now</button></div>
+                            <div className="col-12">
+                            <GooglePayButton
+                                environment="TEST"
+                                paymentRequest={{
+                                    apiVersion: 2,
+                                    apiVersionMinor: 0,
+                                    allowedPaymentMethods: [
+                                    {
+                                        type: 'CARD',
+                                        parameters: {
+                                        allowedAuthMethods: ['PAN_ONLY', 'CRYPTOGRAM_3DS'],
+                                        allowedCardNetworks: ['MASTERCARD', 'VISA'],
+                                        },
+                                        tokenizationSpecification: {
+                                        type: 'PAYMENT_GATEWAY',
+                                        parameters: {
+                                            gateway: 'example',
+                                            gatewayMerchantId: 'exampleGatewayMerchantId',
+                                        },
+                                        },
+                                    },
+                                    ],
+                                    merchantInfo: {
+                                    merchantId: '12345678901234567890',
+                                    merchantName: 'Demo Merchant',
+                                    },
+                                    transactionInfo: {
+                                    totalPriceStatus: 'FINAL',
+                                    totalPriceLabel: 'Total',
+                                    totalPrice: `${this.state.subTotalAmount}`,
+                                    currencyCode: 'INR',
+                                    countryCode: 'IN',
+                                    },
+                                }}
+                                onLoadPaymentData={paymentRequest => {
+                                    console.log('load payment data', paymentRequest);
+                                }}
+                                />
+                                </div>
                         </div>
                         <hr/>
                         {menuItem && menuItem.menu && menuItem.menu.map((item, index) => {
