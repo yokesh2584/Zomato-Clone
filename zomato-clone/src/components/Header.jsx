@@ -21,6 +21,7 @@ function withRouter(Component) {
 class Header extends React.Component {
     constructor(props) {
         super(props);
+        this.handleFacebookLoginSuccess = this.handleFacebookLoginSuccess.bind(this);
         this.state = {
             bg: "transparent",
             logoDisplay: "none",
@@ -55,9 +56,13 @@ class Header extends React.Component {
         }
       }
 
-    componentDidUpdate(prevProps) {
+    componentDidUpdate(prevProps, prevState) {
         if (this.props.location.pathname !== prevProps.location.pathname) {
             this.updateHeader(this.props.location.pathname);
+        }
+
+        if (prevState.loggedUser !== this.state.loggedUser) {
+            console.log('State updated: loggedUser:', this.state.loggedUser);
         }
     }
 
@@ -123,22 +128,42 @@ class Header extends React.Component {
 
     handleFacebookLoginSuccess = (response) => {
         const access_token = response?.accessToken;
-    
+        
         if (access_token) {
             fetch(`https://graph.facebook.com/me?fields=name,email,picture&access_token=${access_token}`)
-                .then((response) => response.json())
+                .then((response) => {
+                    if (!response.ok) throw new Error('Failed to fetch user data');
+                    return response.json();
+                })
                 .then((data) => {
                     this.setState({
                         isLoggedIn: true,
                         loggedUser: data.name,
                         loginModalIsOpen: false,
+                    }, () => {
+                        console.log('State updated successfully');
+                        console.log('isLoggedIn:', this.state.isLoggedIn);
+                        console.log('loggedUser:', this.state.loggedUser);
+                        console.log('loginModalIsOpen:', this.state.loginModalIsOpen);
+                        localStorage.setItem('isLoggedIn', true);
+                        localStorage.setItem('loggedUser', data.name);
                     });
-                    localStorage.setItem('isLoggedIn', true);
-                    localStorage.setItem('loggedUser', data.name);
                 })
                 .catch((error) => console.error('Error fetching Facebook user data:', error));
         }
     };
+
+
+    // handleFacebookLoginSuccess = (response) => {
+    //     console.log('this context:', this);
+    //     this.setState({ loggedUser: 'TestUser', loginModalIsOpen: false }, () => {
+    //         console.log('State updated:', this.state);
+    //     });
+    // };
+    
+    
+    
+    
     
 
     handleLogOut = () => {
