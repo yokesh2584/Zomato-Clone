@@ -1,5 +1,5 @@
 import React from 'react';
-import FacebookLogin from 'react-facebook-login';
+import FacebookLogin from 'react-facebook-login-lite';
 
 const FacebookLoginButton = ({ onSuccess, onError }) => {
     const handleResponse = (response) => {
@@ -17,6 +17,8 @@ const FacebookLoginButton = ({ onSuccess, onError }) => {
             fields="name,email,picture"
             callback={handleResponse}
             cssClass="fb-login custom-fb-button"
+            textButton="Continue with Facebook"
+            icon="fa-facebook"
         />
     );
 };
