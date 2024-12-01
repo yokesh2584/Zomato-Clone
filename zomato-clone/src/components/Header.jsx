@@ -152,18 +152,6 @@ class Header extends React.Component {
                 .catch((error) => console.error('Error fetching Facebook user data:', error));
         }
     };
-
-
-    // handleFacebookLoginSuccess = (response) => {
-    //     console.log('this context:', this);
-    //     this.setState({ loggedUser: 'TestUser', loginModalIsOpen: false }, () => {
-    //         console.log('State updated:', this.state);
-    //     });
-    // };
-    
-    
-    
-    
     
 
     handleLogOut = () => {
