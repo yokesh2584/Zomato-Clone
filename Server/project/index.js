@@ -1,41 +1,17 @@
 const express = require('express');
 const app = express();
-const dotenv = require('dotenv');
-const mongoose = require('mongoose');
+const router = require('../routes/authRoutes');
 const cors = require('cors');
 
-dotenv.config();
+const connectMongo = require('../config/db');
 
-const MongoDB_URI = process.env.MONGODB_URI;
-
-let isMongoConnected = false;
-
-async function connectMongo() {
-  if (!isMongoConnected) {
-    try {
-      await mongoose.connect(MongoDB_URI, { useNewUrlParser: true, useUnifiedTopology: true });
-      console.log("MongoDB connected");
-      isMongoConnected = true;
-    } catch (err) {
-      console.error("MongoDB connection error:", err.message);
-    }
-  }
-}
-
-// Middleware to ensure MongoDB connection
-app.use(async (req, res, next) => {
-  await connectMongo();
-  next();
-});
-
-
+connectMongo();
 
 const restaurantRoute = require('../routes/restaurantsRoute');
 const locationsRoute = require('../routes/locationsRoute');
 const mealTypeRoute = require('../routes/mealTypeRoute');
 const menuItemsRoute = require('../routes/menuItemsRoute');
 const paymentRoute = require('../routes/paymentRoute');
-
 
 
 app.use(cors());
@@ -52,6 +28,7 @@ app.use('/', locationsRoute);
 app.use('/', mealTypeRoute);
 app.use('/', menuItemsRoute);
 app.use('/', paymentRoute);
+app.use('/auth', router);
 
 app.use((req, res, next) => {
     res.status(404).send('Route Not Found');
