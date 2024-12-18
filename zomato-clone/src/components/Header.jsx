@@ -1,4 +1,5 @@
 import React from "react";
+import axios from "axios";
 import { useLocation } from "react-router-dom";
 import Modal from "react-modal";
 import GoogleLoginButton from "./GoogleLoginButton";
@@ -30,6 +31,8 @@ class Header extends React.Component {
             loginModalIsOpen: false,
             isLoggedIn: false,
             loggedUser: undefined,
+            userEmail: "",
+            userPassword: "",
         };
     }
 
@@ -152,7 +155,30 @@ class Header extends React.Component {
                 .catch((error) => console.error('Error fetching Facebook user data:', error));
         }
     };
+
+    handleUserEmail = (e) => {
+        this.setState({ userEmail: e.target.value });
+    }
     
+    handleUserPassword = (e) => {
+        this.setState({ userPassword: e.target.value });
+    }
+    
+    handleUserLogin = () => {
+        const {userEmail, userPassword} = this.state;
+        const user = {
+            email: userEmail,
+            password: userPassword
+        }
+        axios({
+            method: "POST",
+            url: "https://zomato-server-backend.vercel.app/auth/login",
+            headers: { "Content-Type": "application/json" },
+            data: user
+        })
+        .then((response) => console.log(response), this.setState({loginModalIsOpen: false}))
+        .catch((error) => console.error(error));
+    }
 
     handleLogOut = () => {
         try {
@@ -214,11 +240,11 @@ class Header extends React.Component {
                             <div><i className="fa fa-close" onClick={this.handleCloseModal}></i></div>
                             </div>
                         <div className="modal-inputs">
-                            <input type="text" className="input-field" placeholder="Email"/>
-                            <input type="text" className="input-field" placeholder="Password"/>
+                            <input type="text" className="input-field" placeholder="Email" onChange={this.handleUserEmail}/>
+                            <input type="text" className="input-field" placeholder="Password" onChange={this.handleUserPassword}/>
                         </div>
                         <div className="login-buttons">
-                            <button className="modal-login-btn">Login</button>
+                            <button className="modal-login-btn" onClick={this.handleUserLogin}>Login</button>
                         </div>
                         <hr/>
                         <div className="logins">
