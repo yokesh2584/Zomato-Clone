@@ -12,9 +12,10 @@ const locationsRoute = require('../routes/locationsRoute');
 const mealTypeRoute = require('../routes/mealTypeRoute');
 const menuItemsRoute = require('../routes/menuItemsRoute');
 const paymentRoute = require('../routes/paymentRoute');
+const authRoutes = require('../routes/authRoutes');
 
 
-app.use(cors({ origin: 'https://myzomatoclone.vercel.app' }));
+app.use(cors({ "origin": 'https://myzomatoclone.vercel.app', "origin": 'http://localhost:5173' }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
@@ -28,16 +29,16 @@ app.use('/', locationsRoute);
 app.use('/', mealTypeRoute);
 app.use('/', menuItemsRoute);
 app.use('/', paymentRoute);
-app.use('/auth', router);
+app.use('/auth', authRoutes);
 
 app.use((req, res, next) => {
     res.status(404).send('Route Not Found');
   });
 
 
-// const port = 8700;
-// app.listen(port, ()=>{
-//     console.log(`Server is now listening to port ${port}`);
-// });
+const port = 8700;
+app.listen(port, ()=>{
+    console.log(`Server is now listening to port ${port}`);
+});
 
 module.exports = app;
