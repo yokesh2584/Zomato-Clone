@@ -10,7 +10,6 @@ const restaurantRoute = require('../routes/restaurantsRoute');
 const locationsRoute = require('../routes/locationsRoute');
 const mealTypeRoute = require('../routes/mealTypeRoute');
 const menuItemsRoute = require('../routes/menuItemsRoute');
-const paymentRoute = require('../routes/paymentRoute');
 const authRoutes = require('../routes/authRoutes');
 
 
@@ -27,7 +26,6 @@ app.use('/', restaurantRoute);
 app.use('/', locationsRoute);
 app.use('/', mealTypeRoute);
 app.use('/', menuItemsRoute);
-app.use('/', paymentRoute);
 app.use('/auth', authRoutes);
 
 app.use((req, res, next) => {
@@ -35,9 +33,9 @@ app.use((req, res, next) => {
   });
 
 
-const port = 8700;
-app.listen(port, ()=>{
-    console.log(`Server is now listening to port ${port}`);
-});
+// const port = 8700;
+// app.listen(port, ()=>{
+//     console.log(`Server is now listening to port ${port}`);
+// });
 
 module.exports = app;

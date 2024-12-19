@@ -4,7 +4,7 @@
   "description": "This is a zomato-clone backend application",
   "main": "index.js",
   "scripts": {
-    "start": "node project/index.js",
+    "start": "nodemon project/index.js",
     "deploy": "vercel"
   },
   "keywords": [
@@ -30,5 +30,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/yokesh2584/Zomato-Clone.git"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
   }
 }
