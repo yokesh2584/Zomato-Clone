@@ -13,7 +13,7 @@ const menuItemsRoute = require('../routes/menuItemsRoute');
 const authRoutes = require('../routes/authRoutes');
 
 
-app.use(cors({ "origin": 'https://myzomatoclone.vercel.app', "origin": 'http://localhost:5173' }));
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
