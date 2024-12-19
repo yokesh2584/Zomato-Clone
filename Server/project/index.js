@@ -14,7 +14,7 @@ const menuItemsRoute = require('../routes/menuItemsRoute');
 const paymentRoute = require('../routes/paymentRoute');
 
 
-app.use(cors());
+app.use(cors({ origin: 'https://myzomatoclone.vercel.app' }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
